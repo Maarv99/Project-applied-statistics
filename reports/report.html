@@ -1815,9 +1815,8 @@ MAE: 0.849</code></pre>
 <p>In den Variablen erkennen wir, dass unsere Vorhersagevarible length_of_stay eine sehr große Streuung besitzt. Wir sehen eine Kollinearität zwischen den Variablen op_duration und recording_duration.</p>
 <section id="lineares-regressionsmodell" class="level3">
 <h3 class="anchored" data-anchor-id="lineares-regressionsmodell">Lineares Regressionsmodell:</h3>
-<p>Den größten Einfluss auf unser Modell hat die Variable der ASA-Klassifikation.</p>
-<p>Unser Modell wird mit den Variablen “recording_duration”, “age”, “asa” und “bmi” am besten.</p>
-<p>Wir sehen ein kleines adj. R² unseres Modells, was eine geringe Güte des Modells bedeutet. Etwa 14,4% der Variabilität der Aufenthaltsdauer wird durch das Modell erklärt. Des Weiteren zeigt der mean squared error der einzelnen Folds, dass es sich um kein sehr stabiles Modell handelt.</p>
+<p>Unser Modell sagt mit den Variablen “recording_duration”, “age”, “asa” und “bmi” die Aufenthaltsdauer von Patienten am besten voraus. Dennoch sehen wir in unserem Modell nur ein kleines adj. R², was für eine geringe Güte des Modells spricht. Nur etwa 14,4% der Variabilität der Aufenthaltsdauer werden durch das Modell erklärt. Des Weiteren zeigt der mean squared error der einzelnen Folds, dass es sich um kein sehr stabiles Modell handelt. Aus diesen Gründen, würden wir einem Krankenhaus nicht dazu raten mit diesen Variablen und diesem Modell zu versuchen die Aufenthaltsdauer der Patienten zu prognostizieren.</p>
+<p>Mögliche Verbesserungen wären: Über Stratified sampling Gruppen bilden, um so Stichproben auszuwählen. Gruppen könnten beispielsweise sein: - „Abteilungen“ in welchen die Patienten behandelt werden - Art der Operation - Notoperation oder nicht Weiterhin wäre es auch möglich gewesen Variablen mit einzubeziehen, welche über die Forschungsfrage hinaus gehen. Hier wären ebenfalls die Variablen „Abteilungen“ in welchen die Patienten behandelt werden, Art der Operation und Notoperation denkbare Variablen gewesen.</p>
 </section>
 <section id="lasso-regressionsmodell-1" class="level3">
 <h3 class="anchored" data-anchor-id="lasso-regressionsmodell-1">Lasso Regressionsmodell:</h3>
