@@ -1816,7 +1816,13 @@ MAE: 0.849</code></pre>
 <section id="lineares-regressionsmodell" class="level3">
 <h3 class="anchored" data-anchor-id="lineares-regressionsmodell">Lineares Regressionsmodell:</h3>
 <p>Unser Modell sagt mit den Variablen “recording_duration”, “age”, “asa” und “bmi” die Aufenthaltsdauer von Patienten am besten voraus. Dennoch sehen wir in unserem Modell nur ein kleines adj. R², was für eine geringe Güte des Modells spricht. Nur etwa 14,4% der Variabilität der Aufenthaltsdauer werden durch das Modell erklärt. Des Weiteren zeigt der mean squared error der einzelnen Folds, dass es sich um kein sehr stabiles Modell handelt. Aus diesen Gründen, würden wir einem Krankenhaus nicht dazu raten mit diesen Variablen und diesem Modell zu versuchen die Aufenthaltsdauer der Patienten zu prognostizieren.</p>
-<p>Mögliche Verbesserungen wären: Über Stratified sampling Gruppen bilden, um so Stichproben auszuwählen. Gruppen könnten beispielsweise sein: - „Abteilungen“ in welchen die Patienten behandelt werden - Art der Operation - Notoperation oder nicht Weiterhin wäre es auch möglich gewesen Variablen mit einzubeziehen, welche über die Forschungsfrage hinaus gehen. Hier wären ebenfalls die Variablen „Abteilungen“ in welchen die Patienten behandelt werden, Art der Operation und Notoperation denkbare Variablen gewesen.</p>
+<p>Mögliche Verbesserungen wären: Über Stratified sampling Gruppen bilden, um so Stichproben auszuwählen. Gruppen könnten beispielsweise sein:</p>
+<ul>
+<li>„Abteilungen“ in welchen die Patienten behandelt werden</li>
+<li>Art der Operation</li>
+<li>handelt es sich um eine geplante oder eine Notoperation</li>
+</ul>
+<p>Weiterhin wäre es auch möglich gewesen Variablen mit einzubeziehen, welche über die Forschungsfrage hinaus gehen. Hier wären ebenfalls die Variablen „Abteilungen“ in welchen die Patienten behandelt werden, Art der Operation und Notoperation denkbare Variablen gewesen.</p>
 </section>
 <section id="lasso-regressionsmodell-1" class="level3">
 <h3 class="anchored" data-anchor-id="lasso-regressionsmodell-1">Lasso Regressionsmodell:</h3>
